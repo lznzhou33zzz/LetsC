@@ -36,9 +36,19 @@ class Packet:
 
 
 class MemPool:
+    _pool = {}
+
+    class WriteAccess:
+        def __init__(self):
+            pass
+
+    class ReadAccess:
+        def __init__(self):
+            pass
+
     def __init__(self):
         # self.chunks
-        self._pool = {}
+
         with SharedMemoryManager() as self._smm:
             pass
 
