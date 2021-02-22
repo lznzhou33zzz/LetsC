@@ -1,0 +1,29 @@
+Mempools:
+    mempool_ExeRadarCOM_loc:
+
+
+
+SenderPorts:
+    TxPort_ExeRadarCOM_Location:
+        Executor: ExeRadarCOM
+        name: tx_port_ExeRadarCOM_location
+        mempool: mempool_ExeRadarCOM_location
+
+PortsConnections:
+    Connection_ExeRadarCOM_Location: [1, 2, 3, 4, 5]
+
+ExecutorRadar:
+
+
+ExecutorLidar:
+
+
+ExecutorCamera:
+
+
+ExecutorFusion:
+
+Visualization:
+vis_Li_En = True
+vis_Ra_En = True
+vis_Ca_En = True
